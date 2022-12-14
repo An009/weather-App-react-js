@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-size: 6rem;
+}
+p{
+  font-size: 2rem;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0,0.4);
+  position: relative;
+  color: #fff;
+  overflow-y: hidden;
+}
+.app::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./assets/sunset.jpg) no-repeat center center/cover;
+  z-index: -1;
+}
+.bold{
+  font-weight: 700;
+}
+.top , .bottom{
+ text-align: center;
+}
+.top .temp{
+  padding: 10px;
+  height: 60px;
+  width: 100%;
+  background:  rgba(247, 240, 240, 0.3);
+  border-radius: 10px;
+}
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  gap: 3rem;
+  background: rgba(247, 240, 240, 0.2);
+  border-radius: 10px;
+  margin-bottom: 70px;
+}
+.description{
+  margin-top: 50px;
+  position: relative;
+}
+.description p{
+  letter-spacing: 4px;
+  color: rgb(233, 232, 243);
+  font-weight: 900;
+}
+/* search bar */
+.search{
+  text-align: center;
+  padding: 1rem;
+}
+.search input{
+  padding: 5px 10px;
+  width: 450px;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255,0.5);
+  background: transparent;
+  border-radius: 20px;
+  color: #fff;
+  outline: none;
+}
+::placeholder{
+  color: #fff;
+}
